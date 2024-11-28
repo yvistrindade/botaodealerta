@@ -33,6 +33,8 @@ botao.addEventListener('touchstart', (Event) => {
     //console.log("tela pressionado")
     //se a lampada estiver intacta e o interruptor principal estiver ligado
     som.play()
+    inicializarLanterna() 
+    ligar()
 })
 
 //deixarf de preossionar a tela touch
@@ -40,6 +42,8 @@ botao.addEventListener('touchend', (Event) => {
     //console.log("a tela nao esta pressionada")
     //se a lampada estiver intacta e o interruptor principal estiver ligado
     som.pause()
+    inicializarLanterna() 
+    desligar()
 })
 
 //Lanterna (torch)
