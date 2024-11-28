@@ -24,6 +24,7 @@ botao.addEventListener('mouseup', (Event) => {
 
 //pressionar a tela touch e manter
 botao.addEventListener('touchstart', (Event) => {
+    Event.preventDefault()
     //console.log("tela pressionado")
     //se a lampada estiver intacta e o interruptor principal estiver ligado
     som.play()
