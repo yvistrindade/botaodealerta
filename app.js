@@ -8,6 +8,11 @@ const botao = document.getElementById('button')
 // Som de efeito
 let som = new Audio("sound/psycho-scream-soundbible.mp3");
 
+// lanterna (pré carregamento)
+let stream, track // variaveis de apoio
+inicializarLanterna()
+
+
 botao.addEventListener('mousedown', (Event) => {
     Event.preventDefault() // ignorar o comportamento padrão
     //console.log("botao pressionado")
